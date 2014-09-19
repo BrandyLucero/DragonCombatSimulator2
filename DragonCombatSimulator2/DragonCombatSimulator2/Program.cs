@@ -18,33 +18,30 @@ namespace DragonCombatSimulator2
         static void Main(string[] args)
         {
             //print to console a greeting, and instructions to player
-            Console.WriteLine("Welcome to DragonCombatSimulator!");
+            Console.WriteLine("Welcome to Dragon Combat Simulator2!");
             //print to console to ask for player's name
             Console.WriteLine("What is your name?");
             //declare a string variable to store the player's name
             string input = Console.ReadLine();
-            //print to console the game's instructios
+            //print to console the game's instructions
             Console.WriteLine("Hello " + input + ", Let's play!" +
                 "\n " +
-                "\nHere are some instructions:" +
-                "\nAttack with a sword will damage dragon by about" +
+                "\nInstructions:" +
+                "\nAttacking with a sword will damage dragon by about" +
                 "\n20 to 35 points, but only hit 70 percent of the time." +
                 "\nAttack with a magic fireball will hit all the time, but" +
-                "\nonly damage dragon by about 10 to 20 points." +
                 "\nHeals can heal the player by about 10 to 20 points." +
                 "\nDragon attacks after the player, and hits about 80" +
-                "\npercent of the time for damages of about 5 to 15 points to player." +
-                "\nGOOD LUCK " + input.ToUpper() + "!");
+                "\nPlay On " + input.ToUpper() + "!");
 
             //a section divider to make the output look more presentable on console.
             Console.WriteLine(" ");
             
             //print to console instructing player on the required input to commence the game
-            Console.WriteLine("Enter 1 if you want to attack with sword. " +
-               "\nEnter 2 if you want to attack with magic." +
-               "\nEnter 3 if you want to heal your wound for 10 to 20 points.");
-            
-            //enter an extra line to separate sections  
+            Console.WriteLine("Enter 1 to attack with sword. " +
+               "\nEnter 2 to attack with magic." +
+               "\nEnter 3 to heal your wound for 10 to 20 points.");
+      
             Console.WriteLine();
             
             //a while loop with the conditions for how long the game can be played
@@ -71,8 +68,7 @@ namespace DragonCombatSimulator2
                 
                 {
                     //print to console letting the player know he or she lost and ask if they want to play again
-                    Console.WriteLine("OUUUUUCH! YOU LOSE!" +
-                        "\nYOU HAVE NO POINTS LEFT, SO YOU LOSE!");
+                    Console.WriteLine("You suck looser!");
                     Console.WriteLine("GAME OVER! WANT TO PLAY AGAIN?");
                 
                     //break out of the loop
